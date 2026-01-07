@@ -1,5 +1,4 @@
 import asyncio
-import time
 
 async def api_call_1():
     await asyncio.sleep(4)
@@ -23,7 +22,8 @@ async def main():
 
 
     for task in asyncio.as_completed(tasks):
-        await task
+        result = await task
+        print(f"Результат: {result}")
 
     for i, task in enumerate(tasks, 1):
         print(f"  Задача {i}: статус done = {task.done()}")

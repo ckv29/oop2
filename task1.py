@@ -1,5 +1,4 @@
 import asyncio
-import time
 
 async def api_call_1():
     await asyncio.sleep(4)

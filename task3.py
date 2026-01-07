@@ -5,7 +5,7 @@ def long_task(name):
     print(f"{name} started")
     time.sleep(3)
     print(f"{name} ended")
-    pass
+  
 
 t1 = threading.Thread(target=long_task,args=("Thread 1",))
 t2 = threading.Thread(target=long_task,args=("Thread 2",))
